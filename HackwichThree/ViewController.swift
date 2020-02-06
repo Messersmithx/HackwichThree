@@ -9,8 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var taco = 9
-    var burger = 9
+    var numberOfTacos = 9
+    var numberOfBurgers = 9
     var firstString = "The background color will turn to blue"
     var secondString = "The background color will turn to green"
     
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func magicButtonPressed(_ sender: Any) {
-        if (taco == burger) {
+        if (numberOfTacos == numberOfBurgers) {
             self.view.backgroundColor = UIColor.green
             self.greenLabel.text = "Green"
             print("I completed both sets")
